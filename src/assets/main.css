@@ -3,24 +3,29 @@
 /* 全体共通 */
 body {
   margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #fff;
+  background-color: #f8f9fa; /* 明るい背景色 */
   color: #333;
 }
 
 /* ホームページ */
+/* Home.vue の中央揃え */
 .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 画面全体の高さを確保 */
   text-align: center;
-  padding: 100px 20px;
-  background-color: #f8f9fa; /* 明るいグレー */
 }
 
-.home header h1 {
+.home h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.home header p {
+.home p {
   font-size: 1.5rem;
   color: #666; /* ソフトグレー */
 }
