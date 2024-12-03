@@ -16,26 +16,14 @@
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from "vue";
-import { useRoute } from "vue-router";
-
-const route = useRoute();
-const project = ref({});
-
-onMounted(() => {
-  const projectId = route.params.id;
-  // プロジェクトデータを取得（例: ローカルデータまたは API から）
-  // ここでは仮のデータを使用
-  const allProjects = [
-    {
-      id: 1,
-      title: "Project One",
-      description: "Detailed description of project one.",
-      image: "/images/project1.png",
-    },
-    // 他のプロジェクト...
-  ];
-  project.value = allProjects.find((p) => p.id == projectId);
-});
+<script setup lang="ts">
+const project = {
+  title: "Project One",
+  description: "Detailed description of project one.",
+  image: "...",
+  technologies: ["Vue.js", "Element Plus", "GitHub Pages"],
+};
+const goToGithub = () => {
+  window.open("https://github.com/example/project-one", "_blank");
+};
 </script>
