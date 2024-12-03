@@ -1,35 +1,117 @@
-@import './base.css';
+@import "./base.css";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* 全体共通 */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  color: #333;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* ホームページ */
+.home {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f8f9fa; /* 明るいグレー */
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.home header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.home header p {
+  font-size: 1.5rem;
+  color: #666; /* ソフトグレー */
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.cta-button {
+  margin-top: 20px;
+  background-color: #333; /* ダークグレー */
+  color: #fff;
+  border: none;
+}
+
+.cta-button:hover {
+  background-color: #555; /* ホバー時のトーンアップ */
+}
+
+/* プロジェクト一覧ページ */
+.projects {
+  padding: 50px 20px;
+}
+
+.projects header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #444; /* 微妙に暗いトーン */
+}
+
+.project-card {
+  padding: 20px;
+  border: 1px solid #ddd; /* カードの境界線 */
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* プロジェクト詳細ページ */
+.project-detail {
+  padding: 50px 20px;
+}
+
+.project-detail header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-detail .project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+}
+
+.project-detail .project-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.project-detail .project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.project-detail .project-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-detail .project-info ul li {
+  background-color: #f1f1f1;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
