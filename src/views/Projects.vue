@@ -23,13 +23,17 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import logo from "@/assets/thumbnail.png";
+
+// const aaa = "@/assets/logo.svg";
 
 const projects = ref([
   {
     id: 1,
-    title: "Project One",
-    description: "This is a description of project one.",
-    image: "/images/project1.png",
+    title: "姿勢推定でドラゴンボールの技をだす",
+    description:
+      "姿勢推定AIの技術を仕様して、ポーズに応じた技のエフェクトを表示します",
+    image: logo,
   },
   // 他のプロジェクト...
 ]);
