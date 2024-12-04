@@ -17,12 +17,10 @@
 </template>
 
 <script setup lang="ts">
-const project = {
-  title: "Project One",
-  description: "Detailed description of project one.",
-  image: "...",
-  technologies: ["Vue.js", "Element Plus", "GitHub Pages"],
-};
+import { useProject } from "@/composables/useProject";
+
+const project = useProject();
+
 const goToGithub = () => {
   window.open("https://github.com/example/project-one", "_blank");
 };
