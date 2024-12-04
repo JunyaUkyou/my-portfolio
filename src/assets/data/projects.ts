@@ -13,5 +13,6 @@ export const projects = [
       "TensorFlow.js/knn-classifier",
       "Three.js",
     ],
+    githubUrl: "https://github.com/JunyaUkyou/dragonball-effects",
   },
 ];

@@ -22,6 +22,10 @@ import { useProject } from "@/composables/useProject";
 const project = useProject();
 
 const goToGithub = () => {
-  window.open("https://github.com/example/project-one", "_blank");
+  if (project?.value?.githubUrl) {
+    window.open(project.value.githubUrl, "_blank");
+  } else {
+    console.warn("GitHub URL is not available for this project.");
+  }
 };
 </script>
