@@ -7,6 +7,15 @@
     <img :src="project?.thumbnail" alt="Project image" class="project-image" />
     <p class="project-description">{{ project?.description }}</p>
     <el-divider />
+
+    <!-- 技術情報 -->
+    <div class="project-info">
+      <h2>Technologies Used:</h2>
+      <ul>
+        <li v-for="tech in project?.technologies" :key="tech">{{ tech }}</li>
+      </ul>
+    </div>
+    <el-divider />
     <!-- プロジェクト概要 -->
     <div class="project-overview">
       <h2>Project Overview</h2>
@@ -22,13 +31,6 @@
     </div>
 
     <el-divider />
-    <!-- 技術情報 -->
-    <div class="project-info">
-      <h2>Technologies Used:</h2>
-      <ul>
-        <li v-for="tech in project?.technologies" :key="tech">{{ tech }}</li>
-      </ul>
-    </div>
     <!-- GitHub ボタン -->
     <el-button type="primary" @click="goToGithub">View on GitHub</el-button>
   </div>
