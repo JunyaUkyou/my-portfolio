@@ -1,4 +1,5 @@
 import thumbnail1 from "@/assets/images/projects/1/thumbnail.png";
+import kamehamehaImage from "@/assets/images/projects/1/kamehameha.gif";
 
 export interface ProjectInterface {
   id: number;
@@ -7,16 +8,23 @@ export interface ProjectInterface {
   thumbnail: string;
   technologies: string[];
   overview: {
-    descriptionList: projectDescription[];
+    descriptionList: ProjectDescriptionType[];
     image: string;
     folderStructure: string;
   };
   githubUrl: string;
+  features: ProjectFeatureType[];
 }
 
-export type projectDescription = {
+export type ProjectDescriptionType = {
   title: string;
   details: string;
+};
+
+export type ProjectFeatureType = {
+  title: string;
+  description: string;
+  image: string;
 };
 
 export const projects: ProjectInterface[] = [
@@ -54,9 +62,12 @@ export const projects: ProjectInterface[] = [
       folderStructure: "",
     },
     githubUrl: "https://github.com/JunyaUkyou/dragonball-effects",
+    features: [
+      {
+        title: "かめはめ波",
+        description: "",
+        image: kamehamehaImage,
+      },
+    ],
   },
 ];
-
-// "リアルタイム映像から姿勢推定AIのMediaPipe Pose Landmarkerを使用し、映像中のポーズの座標値(x,y,z)を検出します",
-// "検出した座標値にラベル（技名）を付与し、TensorFlow.js/knn-classifierで学習、ポーズに応じた技名を取得できるようにします",
-// "検出したポーズに応じた技のエフェクトをThree.jsで描画します",

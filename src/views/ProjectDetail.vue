@@ -29,6 +29,21 @@
         </li>
       </ol>
     </div>
+    <el-divider />
+
+    <!-- 各機能紹介 -->
+    <div class="features">
+      <h2>Features</h2>
+      <div
+        class="feature"
+        v-for="(feature, index) in project?.features"
+        :key="index"
+      >
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+        <img :src="feature.image" :alt="feature.title" class="feature-image" />
+      </div>
+    </div>
 
     <el-divider />
     <!-- GitHub ボタン -->
