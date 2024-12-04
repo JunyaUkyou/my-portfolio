@@ -6,7 +6,11 @@
     <el-row :gutter="20" class="project-list">
       <el-col :span="8" v-for="project in allProjects" :key="project.id">
         <el-card class="project-card">
-          <img :src="project.image" alt="Project image" class="project-image" />
+          <img
+            :src="project.thumbnail"
+            alt="Project image"
+            class="project-image"
+          />
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
           <el-button
