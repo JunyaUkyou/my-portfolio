@@ -14,7 +14,7 @@ export const projects: ProjectInterface[] = [
     id: 1,
     title: "姿勢推定でドラゴンボールの技をだす",
     description:
-      "姿勢推定AIの技術を仕様して、ポーズに応じた技のエフェクトを表示します",
+      "姿勢推定AIの技術を使用して、ポーズに応じた技のエフェクトを表示します",
     image: logo,
     technologies: [
       "Typescript",
