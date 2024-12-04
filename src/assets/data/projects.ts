@@ -7,6 +7,11 @@ export const projects = [
     description:
       "姿勢推定AIの技術を仕様して、ポーズに応じた技のエフェクトを表示します",
     image: logo,
-    technologies: ["Vue.js", "PoseNet", "Three.js"],
+    technologies: [
+      "Typescript",
+      "MediaPipe Pose Landmarker",
+      "TensorFlow.js/knn-classifier",
+      "Three.js",
+    ],
   },
 ];
