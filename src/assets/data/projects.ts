@@ -1,6 +1,15 @@
 import logo from "@/assets/thumbnail.png";
 
-export const projects = [
+export interface ProjectInterface {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  githubUrl: string;
+}
+
+export const projects: ProjectInterface[] = [
   {
     id: 1,
     title: "姿勢推定でドラゴンボールの技をだす",
