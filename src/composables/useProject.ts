@@ -1,13 +1,14 @@
-import { ref } from "vue";
+import { computed } from "vue";
 import { projects } from "@/assets/data/projects";
 import { useRoute } from "vue-router";
 
 export function useProject() {
   const route = useRoute();
-  const projectId = Number(route.params.id);
+  const projectId = computed(() => Number(route.params.id));
 
-  const project = ref(projects.filter((project) => project.id === projectId))
-    .value[0];
+  const project = computed(() =>
+    projects.find((project) => project.id === projectId.value)
+  );
 
   return project;
 }

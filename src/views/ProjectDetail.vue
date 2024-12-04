@@ -1,15 +1,15 @@
 <template>
   <div class="project-detail">
     <header>
-      <h1>{{ project.title }}</h1>
+      <h1>{{ project?.title }}</h1>
     </header>
-    <img :src="project.image" alt="Project image" class="project-image" />
-    <p class="project-description">{{ project.description }}</p>
+    <img :src="project?.image" alt="Project image" class="project-image" />
+    <p class="project-description">{{ project?.description }}</p>
     <el-divider />
     <div class="project-info">
       <h3>Technologies Used:</h3>
       <ul>
-        <li v-for="tech in project.technologies" :key="tech">{{ tech }}</li>
+        <li v-for="tech in project?.technologies" :key="tech">{{ tech }}</li>
       </ul>
     </div>
     <el-button type="primary" @click="goToGithub">View on GitHub</el-button>
