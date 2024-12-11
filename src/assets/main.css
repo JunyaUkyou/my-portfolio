@@ -120,3 +120,20 @@ body {
   padding: 5px 10px;
   border-radius: 4px;
 }
+
+.code-block {
+  background: #282c34; /* ダークテーマ */
+  color: #ffffff; /* コード文字色 */
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  height: 600px;
+}
+
+.code-block code {
+  white-space: pre;
+  display: block;
+}
