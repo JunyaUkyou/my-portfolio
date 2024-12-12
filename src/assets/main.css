@@ -136,3 +136,7 @@ body {
   white-space: pre;
   display: block;
 }
+
+.feature-image {
+  max-width: 500px;
+}

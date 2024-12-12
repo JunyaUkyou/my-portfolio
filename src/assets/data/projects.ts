@@ -163,7 +163,7 @@ export const projects: ProjectInterface[] = [
         image: good1,
       },
       {
-        title: "良質豆1個",
+        title: "良質豆3個",
         description:
           "良質豆3個 裏表混在ケースも検出します。アプリでガードはしていないですが、豆は3個まで学習させています。",
         image: good3,
