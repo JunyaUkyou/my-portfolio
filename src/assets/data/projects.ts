@@ -1,6 +1,6 @@
 import thumbnail1 from "@/assets/images/projects/1/thumbnail.png";
 import kamehamehaImage from "@/assets/images/projects/1/kamehameha.gif";
-import teleportation from "@/assets/images/projects/1/teleportation.gif";
+import teleportationImage from "@/assets/images/projects/1/teleportation.gif";
 import supersaiyajinImage from "@/assets/images/projects/1/supersaiyajin.gif";
 
 export interface ProjectInterface {
@@ -80,7 +80,7 @@ export const projects: ProjectInterface[] = [
         title: "瞬間移動",
         description:
           "指を額にあてるポーズをすると、リアルタイム映像が事前に撮影した人間がいない部屋に1.2秒置き換わります。その間に素早く移動することで擬似的に瞬間移動を行います",
-        image: teleportation,
+        image: teleportationImage,
       },
       {
         title: "かめはめ波",
