@@ -2,6 +2,7 @@ import thumbnail1 from "@/assets/images/projects/1/thumbnail.png";
 import kamehamehaImage from "@/assets/images/projects/1/kamehameha.gif";
 import teleportationImage from "@/assets/images/projects/1/teleportation.gif";
 import supersaiyajinImage from "@/assets/images/projects/1/supersaiyajin.gif";
+import bigbanattackImage from "@/assets/images/projects/1/bigbanattack.gif";
 
 export interface ProjectInterface {
   id: number;
@@ -92,7 +93,7 @@ export const projects: ProjectInterface[] = [
         title: "ビッグバンアタック（魔人ブウ イベントつき）",
         description:
           "左から右へ向かって手のひらを向けます。現在はビッグバンアタックを打つと魔人ブウイベントが発生します",
-        image: kamehamehaImage,
+        image: bigbanattackImage,
       },
     ],
   },
