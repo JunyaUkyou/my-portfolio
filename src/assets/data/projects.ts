@@ -6,6 +6,10 @@ import bigbanattackImage from "@/assets/images/projects/1/bigbanattack.gif";
 import { directoryStructure as directoryStructure1 } from "@/assets/folderStructure/project/1/directoryStructure";
 
 import thumbnail2 from "@/assets/images/projects/2/thumbnail.png";
+import good1 from "@/assets/images/projects/2/good1.png";
+import good3 from "@/assets/images/projects/2/good3.png";
+import bad1 from "@/assets/images/projects/2/bad1.png";
+import good1bad1 from "@/assets/images/projects/2/good1bad1.png";
 import { directoryStructure as directoryStructure2 } from "@/assets/folderStructure/project/2/directoryStructure";
 
 export interface ProjectInterface {
@@ -153,28 +157,26 @@ export const projects: ProjectInterface[] = [
       "https://github.com/JunyaUkyou/detect-defective-green-coffee-beans",
     features: [
       {
-        title: "スーパーサイヤ人",
+        title: "良質豆1個",
         description:
-          "スーパーサイヤ人の戦闘力を上げるポーズをするとスーパーサイヤ人エフェクトが発生します",
-        image: supersaiyajinImage,
+          "良質豆1個 表のみを検出しバウンディングボックスで囲んだ結果を表示します",
+        image: good1,
       },
       {
-        title: "瞬間移動",
+        title: "良質豆1個",
         description:
-          "指を額にあてるポーズをすると、リアルタイム映像が事前に撮影した人間がいない部屋に1.2秒置き換わります。その間に素早く移動することで擬似的に瞬間移動を行います",
-        image: teleportationImage,
+          "良質豆3個 裏表混在ケースも検出します。アプリでガードはしていないですが、豆は3個まで学習させています。",
+        image: good3,
       },
       {
-        title: "かめはめ波",
-        description:
-          "かめはめ波の構えをすると、かめはめ波が発生します。「波」でかめはめ波がカメラに向かって大きく遷移するので、そのタイミングでかめはめ波の構えから実行にポーズを変更します",
-        image: kamehamehaImage,
+        title: "欠点豆1個",
+        description: "欠点豆1個 表のみを検出します",
+        image: bad1,
       },
       {
-        title: "ビッグバンアタック（魔人ブウ イベントつき）",
-        description:
-          "左から右へ向かって手のひらを向けます。現在はビッグバンアタックを打つと魔人ブウイベントが発生します",
-        image: bigbanattackImage,
+        title: "欠点豆と良質豆の混在",
+        description: "欠点豆と良質豆の混在も検出します",
+        image: good1bad1,
       },
     ],
     directoryStructure: directoryStructure2,
