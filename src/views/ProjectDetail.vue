@@ -36,7 +36,10 @@
 
     <div class="directory-structure">
       <h2>Directory Structure</h2>
-      <CodeBlock :code="directoryStructure" :style="['max-height:600px']" />
+      <CodeBlock
+        :code="project!.directoryStructure"
+        :style="['max-height:600px']"
+      />
     </div>
     <el-divider />
 
@@ -64,7 +67,6 @@
 import { useProject } from "@/composables/useProject";
 import CodeBlock from "@/components/CodeBlock.vue";
 import Link from "@/components/Link.vue";
-import { directoryStructure } from "@/assets/data/directoryStructure";
 
 const project = useProject();
 
