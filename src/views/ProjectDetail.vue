@@ -67,9 +67,6 @@ import Link from "@/components/Link.vue";
 import { directoryStructure } from "@/assets/data/directoryStructure";
 
 const project = useProject();
-if (project) {
-  console.log(project.value?.githubUrl);
-}
 
 const goToGithub = () => {
   if (project?.value?.githubUrl) {

@@ -1,5 +1,6 @@
 import thumbnail1 from "@/assets/images/projects/1/thumbnail.png";
 import kamehamehaImage from "@/assets/images/projects/1/kamehameha.gif";
+import teleportation from "@/assets/images/projects/1/teleportation.gif";
 
 export interface ProjectInterface {
   id: number;
@@ -43,6 +44,11 @@ export const projects: ProjectInterface[] = [
     overview: {
       descriptionList: [
         {
+          title: "リアルタイム映像処理",
+          details:
+            "Three.jsのプレーンオブジェクトにマテリアルとしてvideoTextureを適用し、リアルタイム映像を投影します。",
+        },
+        {
           title: "姿勢推定",
           details:
             "MediaPipe Pose Landmarkerを使用し、映像中の人物のポーズをリアルタイムで検出し、座標値（x, y, z）を取得します。",
@@ -64,8 +70,27 @@ export const projects: ProjectInterface[] = [
     githubUrl: "https://github.com/JunyaUkyou/dragonball-effects",
     features: [
       {
+        title: "スーパーサイヤ人",
+        description:
+          "スーパーサイヤ人の戦闘力を上げるポーズをするとスーパーサイヤ人エフェクトが発生します",
+        image: kamehamehaImage,
+      },
+      {
+        title: "瞬間移動",
+        description:
+          "指を額にあてるポーズをすると、リアルタイム映像が事前に撮影した人間がいない部屋に1.2秒置き換わります。その間に素早く移動することで擬似的に瞬間移動を行います",
+        image: teleportation,
+      },
+      {
         title: "かめはめ波",
-        description: "",
+        description:
+          "かめはめ波の構えをすると、かめはめ波が発生します。「波」でかめはめ波がカメラに向かって大きく遷移するので、そのタイミングでかめはめ波の構えから実行にポーズを変更します",
+        image: kamehamehaImage,
+      },
+      {
+        title: "ビッグバンアタック（魔人ブウ イベントつき）",
+        description:
+          "左から右へ向かって手のひらを向けます。現在はビッグバンアタックを打つと魔人ブウイベントが発生します",
         image: kamehamehaImage,
       },
     ],
