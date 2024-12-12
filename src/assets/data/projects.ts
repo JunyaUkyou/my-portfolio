@@ -1,6 +1,7 @@
 import thumbnail1 from "@/assets/images/projects/1/thumbnail.png";
 import kamehamehaImage from "@/assets/images/projects/1/kamehameha.gif";
 import teleportation from "@/assets/images/projects/1/teleportation.gif";
+import supersaiyajinImage from "@/assets/images/projects/1/supersaiyajin.gif";
 
 export interface ProjectInterface {
   id: number;
@@ -73,7 +74,7 @@ export const projects: ProjectInterface[] = [
         title: "スーパーサイヤ人",
         description:
           "スーパーサイヤ人の戦闘力を上げるポーズをするとスーパーサイヤ人エフェクトが発生します",
-        image: kamehamehaImage,
+        image: supersaiyajinImage,
       },
       {
         title: "瞬間移動",
