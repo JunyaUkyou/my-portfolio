@@ -3,25 +3,29 @@
     <header>
       <h1>My Projects</h1>
     </header>
-    <el-row :gutter="20" class="project-list">
-      <el-col :span="8" v-for="project in allProjects" :key="project.id">
-        <el-card class="project-card">
+    <div class="project-list">
+      <div
+        v-for="project in allProjects"
+        :key="project.id"
+        class="project-card"
+      >
+        <div class="card-image">
           <img
             :src="project.thumbnail"
             alt="Project image"
             class="project-image"
           />
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.description }}</p>
-          <el-button
-            type="primary"
-            @click="$router.push(`/projects/${project.id}`)"
-          >
-            View Details
-          </el-button>
-        </el-card>
-      </el-col>
-    </el-row>
+        </div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <el-button
+          type="primary"
+          @click="$router.push(`/projects/${project.id}`)"
+        >
+          View Details
+        </el-button>
+      </div>
+    </div>
   </div>
 </template>
 

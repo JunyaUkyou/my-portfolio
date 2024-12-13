@@ -4,7 +4,11 @@
       <h1>{{ project?.title }}</h1>
     </header>
     <!-- メインプロジェクト画像 -->
-    <img :src="project?.thumbnail" alt="Project image" class="project-image" />
+    <img
+      :src="project?.thumbnail"
+      alt="Project image"
+      class="project-detail-image"
+    />
     <p class="project-description">{{ project?.description }}</p>
 
     <Link :url="project!.githubUrl" name="GITHUBレポジトリはこちら" />
